@@ -16,16 +16,18 @@ class App extends Component {
           </div>
           <ul className="ingredients-list">
             <li className="list-item">
-              <div className="ingredients-info">
+              <div className="ingredient">
+                <div className="ingredient-info">
                   <input className="ingredient-select" type="checkbox"></input>
-                  <input className="ingredient-quantity" type="text"></input>
-                  <div className ="item-label">
-                    <h2>Arroz</h2>
-                    <p>Marca</p>
-                    <p>x Kg</p>
+                    <input className="ingredient-quantity" type="text"></input>
+                    <div className ="item-label">
+                      <h2>Arroz</h2>
+                      <p>Marca</p>
+                      <p>x Kg</p>
                   </div>
                 </div>
-                <div className="item-price"> 1,20
+                  <div className="item-price"> 1,20
+                  </div>
                 </div>
             </li>
           </ul>
