@@ -19,18 +19,25 @@ class App extends Component {
               <div className="ingredient">
                 <div className="ingredient-info">
                   <input className="ingredient-select" type="checkbox"></input>
-                    <input className="ingredient-quantity" type="text"></input>
-                    <div className ="item-label">
-                      <h2>Arroz</h2>
-                      <p>Marca</p>
-                      <p>x Kg</p>
-                  </div>
+                  <input className="ingredient-quantity" type="text"></input>
+                  
+                    <h2>Arroz</h2>
+                    <p>Marca</p>
+                    <p>x Kg</p>
+                  
                 </div>
                   <div className="item-price"> 1,20
                   </div>
                 </div>
             </li>
           </ul>
+          <div className="checkout-info">
+            <p>Items: x</p>
+            <p>Subtotal :</p>
+            <p>Gastos de envío :</p>
+            <p>Total :</p>
+          </div>
+          <button className="checkout-button"> Comprar Ingredientes : xxx </button>
         </main>
       </div>
     );
