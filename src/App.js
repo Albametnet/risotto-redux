@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className="app">
+        <header className="app-header">
+          <p>Ingredientes</p>
+          <h1>Risotto de setas</h1>
         </header>
+        <main className= "app_main">
+          <div className= "auto-selector">
+            <p>Seleccionar todo | </p>
+            <p>Deseleccionar todo</p>
+          </div>
+          <ul className="ingredients-list">
+            <li className="list-item">
+              <div className="ingredients-info">
+                  <input className="ingredient-select" type="checkbox"></input>
+                  <input className="ingredient-quantity" type="text"></input>
+                  <div className ="item-label">
+                    <h2>Arroz</h2>
+                    <p>Marca</p>
+                    <p>x Kg</p>
+                  </div>
+                </div>
+                <div className="item-price"> 1,20
+                </div>
+            </li>
+          </ul>
+        </main>
       </div>
     );
   }
